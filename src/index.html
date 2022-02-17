@@ -6,9 +6,9 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body class="text-grey-600 font-body">
-    <div>
+    <div class="grid md:grid-cols-3">
         <!-- content wrapper -->
-        <div>
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -35,10 +35,10 @@
             </nav>
         </div>
         <!-- end -->
-        <main class="px-16 py-6">
+        <main class="px-16 py-6 md:col-span-2 bg-gray-100">
             <div class="flex justify-center md:justify-end">
-                <a href="" class="text-primary">Login</a>
-                <a href="" class="text-primary">Signup</a>
+                <a href="" class="btn text-primary border-primary md:border-2">Login</a>
+                <a href="" class="btn text-primary ml-2 border-primary md:border-2">Signup</a>
             </div>
 
             <div class="flex justify-center items-end">
@@ -55,15 +55,37 @@
             <div>
                 <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
 
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
-                    <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative">
+                    <div class="card">
                         <img src="../public/img/stew.jpg" alt="" class="h-32 sm:h-48 w-full object-cover">
                         <div class="m-4">
                             <span class="font-bold">5 Bean Chilli stew</span>
                             <span class="block text-gray-500 text-sm">Recipe by Mario</span>
                         </div>
-                        <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold p-2 rounded-full absolute top-0 mt-2 ml-2">
+                        <div class="badge">
+                            <span>25mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../public/img/noodles.jpg" alt="" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../public/img/curry.jpg" alt="" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
                             <span>25mins</span>
                         </div>
                     </div>
@@ -76,7 +98,7 @@
                 </div>
 
                 <div class="mt-12 flex justify-end">
-                    <div class="text-secondary-200 bg-secondary-100">Load more</div>
+                    <div class="btn text-secondary-200 bg-secondary-100">Load more</div>
                     </div>
                 </div>
         </main>
